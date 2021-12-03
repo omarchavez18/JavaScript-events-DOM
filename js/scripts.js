@@ -36,3 +36,32 @@ const navegacion = document.querySelector(".navegacion");
 navegacion.appendChild(nuevoEnlace);
 
 console.log(nuevoEnlace);
+
+//eventos.
+
+console.log(1);
+
+//forma para registrar los eventos es addEventListener
+
+window.addEventListener("load", function () {
+  // load espera que el JS css todos los archivos que dependen del html se descarguen para ejecutar el codigo, a diferencia de DOMContentLoaded
+
+  console.log(2);
+});
+
+window.onload = function () {
+  // esta es otra forma igual de escribir el de arriba, y se ejecutan al mismo tiempo
+  console.log(3);
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+  // normalmente se utiliza "DOMContentLoaded"
+  //DOMContentLoaded solo espera a que se descargue el html no espera ni css ni imagenes etc, por eso se ejecuta primero que 'load'
+  console.log(4);
+});
+console.log(5);
+
+window.onscroll = function () {
+  // esta funcion se ejecuta cuando le damos scroll a la pagina.
+  console.log("scrolling...");
+};
