@@ -65,3 +65,18 @@ window.onscroll = function () {
   // esta funcion se ejecuta cuando le damos scroll a la pagina.
   console.log("scrolling...");
 };
+
+// seleccionar elementos del html y registrarle o asociarles un evento.
+
+const btnEnviar = document.querySelector(".boton--primario"); // aqui se selecciono el boton de enviar del html
+btnEnviar.addEventListener("click", function (evento) {
+  console.log(evento.target); // el '.target' nos esta indicando a que le dimos click
+
+  evento.preventDefault(); // preventDefault nos impide llevar acabo la accion original del elemento asociado del html.
+
+  //preventDefault es especialmente util para la validacion de formularios, solo permitiendo dar click a enviar o submit cuando este llenado.
+
+  console.log("diste click al boton de ENVIAR");
+
+  console.log("enviando formulario");
+});
