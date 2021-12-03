@@ -8,8 +8,5 @@ console.log(heading);
 //querySelectorAll
 //retorna todos los elementos que concuerden con los parametros dados.
 const enlaces = document.querySelectorAll(".navegacion a");
-console.log(enlaces[0]);
-
 enlaces[0].textContent = "nuevo texto para enlace";
-
-//getElementById
+enlaces[0].classList.add("nueva-clase");
