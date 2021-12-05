@@ -65,7 +65,8 @@ console.log(nuevoEnlace);
 // window.onscroll = function () {
 // esta funcion se ejecuta cuando le damos scroll a la pagina.
 //   console.log("scrolling...");
-// };
+
+//};
 
 // seleccionar elementos del html y registrarle o asociarles un evento.
 
@@ -109,7 +110,6 @@ formulario.addEventListener("submit", function (evento) {
   const { nombre, email, mensaje } = datos;
   if (nombre === "" || email === "" || mensaje === "") {
     mostrarError("todos los campos son obligatorios");
-
     return; // corta la ejecucion del codigo
   }
 
